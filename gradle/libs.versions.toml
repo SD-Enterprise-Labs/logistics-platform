@@ -1,0 +1,8 @@
+[versions]
+springBoot = "3.5.6"
+dependencyManagement = "1.1.7"
+
+[libraries]
+# Plugin artifacts, consumed by buildSrc so the versions live in one place
+spring-boot-gradle-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
+dependency-management-plugin = { module = "io.spring.gradle:dependency-management-plugin", version.ref = "dependencyManagement" }
